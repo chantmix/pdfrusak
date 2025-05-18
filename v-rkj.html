@@ -85,31 +85,74 @@
 				});
 			})
 		</script>
+		<!-- Custom CSS -->
 		<style>
+			html,
 			body {
-				background-color: #f6f6f6;
+				height: 100%;
+				margin: 0;
+				display: flex;
+				flex-direction: column;
 			}
 
-			#author {
-				font-size: 15px;
-				font-weight: bold;
-				color: #0186c9;
+			body {
+				flex: 1;
 			}
 
-			#date {
-				margin-left: 10px;
-				font-size: 15px;
-				color: #819196;
+			#footer {
+				margin-top: auto;
+				background-color: #333;
+				padding: 20px 0;
+				color: white;
 			}
 
-			#size {
-				font-size: 15px;
-				color: #819196;
+			.bookshelf .thumb {
+				display: inline-block;
+				cursor: pointer;
+				margin: 0 0.5%;
+				width: 15%;
+				box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+				max-width: 120px;
 			}
 
-			#description {
-				margin-top: 20px;
-				font-weight: lighter;
+			.bookshelf .thumb img {
+				width: 100%;
+				display: block;
+				vertical-align: top;
+			}
+
+			.bookshelf .shelf-img {
+				height: auto;
+				max-width: 100%;
+				vertical-align: top;
+				margin-top: -12px;
+			}
+
+			.bookshelf .covers {
+				width: 100%;
+				position: relative;
+				text-align: center;
+			}
+
+			.bookshelf {
+				text-align: center;
+				padding: 0;
+			}
+
+			.pagination>li>a,
+			.pagination>li>span {
+				color: #c0392b;
+			}
+
+			.pagination>li>a:hover,
+			.pagination>li>span:hover {
+				color: #c0392b !important;
+			}
+
+			.pagination>li.active>a {
+				background-color: #c0392b !important;
+				border: 0;
+				color: #fff;
 			}
 		</style>
 	</head>
@@ -156,8 +199,13 @@
 		</section>
 		<!-- END OF PDF INFORMATION -->
 		<!-- Footer -->
-		<section id="footer" class="footer mt-5">
+		<footer id="footer" class="footer">
 			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center text-white">
+						<p>Chant MiX PDF Rusak akan diupdate secara berkala</p>
+					</div>
+				</div>
 				<div class="row text-center text-xs-center text-sm-left text-md-left">
 					<!-- <div class="col-xs-12 col-sm-4 col-md-4"><h5>Tentang KPK</h5><ul class="list-unstyled quick-links"><li><a href="https://www.kpk.go.id/id/tentang-kpk/sekilas-komisi-pemberantasan-korupsi"><i class="fa fa-angle-double-right"></i>About</a></li><li><a href="https://www.kpk.go.id/id/tentang-kpk/pejabat-struktural"><i class="fa fa-angle-double-right"></i>Pejabat Struktural</a></li><li><a href="https://www.kpk.go.id/id/tentang-kpk/roadmap-dan-rencana-strategis"><i class="fa fa-angle-double-right"></i>Rencana Strategis</a></li></ul></div><div class="col-xs-12 col-sm-4 col-md-4"><h5>Layanan Publik</h5><ul class="list-unstyled quick-links"><li><a href="https://www.kpk.go.id/id/layanan-publik/pengaduan-masyarakat/mengenal-pengaduan-masyarakat"><i class="fa fa-angle-double-right"></i>Pengaduan Masyarakat</a></li><li><a href="https://www.kpk.go.id/id/layanan-publik/laporan-harta-kekayaan-penyelenggaraan-negara/mengenal-lhkpn"><i class="fa fa-angle-double-right"></i>LHKPN</a></li><li><a href="https://www.kpk.go.id/id/layanan-publik/gratifikasi/mengenal-gratifikasi"><i class="fa fa-angle-double-right"></i>Gratifikasi</a></li><li><a href="https://www.kpk.go.id/id/layanan-publik/informasi-publik"><i class="fa fa-angle-double-right"></i>Informasi Publik</a></li></ul></div><div class="col-xs-12 col-sm-4 col-md-4"><h5>Kontak KPK</h5><ul class="list-unstyled quick-links"><li><a href="https://www.google.com/maps/dir/-6.1677568,106.6115072/GEDUNG+KPK+Jl.+Kuningan+Persada+Kav.+4+Jakarta+Selatan+12950/@-6.1687329,106.5817096,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2e69f40eaa579f6f:0x3177a5ac88a987e8!2m2!1d106.8307239!2d-6.2077814"><i class="fas fa-map-marker-alt"></i></i>GEDUNG KPK Jl. Kuningan Persada Kav. 4 Jakarta Selatan 12950</a></li><li><a href="#"><i class="fas fa-phone"></i>(021) 2557 8300</a></li><li><a href="#"><i class="fas fa-fax"></i>(021) 2557 8333</a></li><li><a href="#"><i class="fas fa-envelope"></i>informasi@kpk.go.id</a></li><li><a href="#"><i class="fas fa-headset"></i></i>Call Center: 198</a></li></ul></div>-->
 				</div>
@@ -195,8 +243,7 @@
 					</hr>
 				</div>
 			</div>
-		</section>
-		<!-- End Of Footer -->
+		</footer>
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
