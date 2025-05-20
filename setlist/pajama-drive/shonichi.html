@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="https://chantmix.github.io/pdfrusak/images/logo.png">
+		<title>View PDF</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- AJAX -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+		<!-- costume css -->
+		<link rel="stylesheet" type="text/css" href="../../css/flipbook.style.css">
+		<link rel="stylesheet" type="text/css" href="../../css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="../../css/footer.css">
+		<!-- Bootstrap Css -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<!-- Standard SEO Meta Tags -->
+		<meta name="description" content="JKT48 Chant Mix Rusak PDF">
+		<meta name="keywords" content="jkt48, chant, mix, rusak, pdf, musang">
+		<meta name="author" content="Dandy">
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://chantmix.github.io/pdfrusak/">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="JKT48 Chant Mix Rusak PDF">
+		<meta property="og:description" content="JKT48 Chant Mix Rusak PDF">
+		<meta property="og:image" content="https://chantmix.github.io/pdfrusak/images/meta_image.png">
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="JKT48 Chant Mix Rusak PDF">
+		<meta name="twitter:description" content="JKT48 Chant Mix Rusak PDF">
+		<meta name="twitter:image" content="https://chantmix.github.io/pdfrusak/images/meta_image.png">
+		<meta name="twitter:site" content="@da_n_dy">
+		<meta name="twitter:creator" content="@da_n_dy">
+		<link rel="icon" type="image/x-icon" href="https://chantmix.github.io/pdfrusak/images/logo.png">
+		<!-- Include JS -->
+		<script src="js/flipbook.min.js"></script>
+		<script type="text/javascript">
+		</script>
+		<style>
+			html,
+			body {
+				height: 100%;
+				margin: 0;
+				display: flex;
+				flex-direction: column;
+			}
+
+			body {
+				flex: 1;
+			}
+
+            #author {
+                font-size: 15px;
+                font-weight: bold;
+                color: #0186c9;
+            }
+            #date {
+                margin-left: 10px;
+                font-size: 15px;
+                color: #819196;
+            }
+            #size {
+                font-size: 15px;
+                color: #819196;
+            }
+
+			#footer {
+				margin-top: auto;
+				background-color: #333;
+				padding: 20px 0;
+				color: white;
+			}
+            
+            .lyrics {
+                font-size: 15px;
+                margin-top: -10px;
+            }
+
+            .chant {
+                cursor: pointer;
+                color: #c0392b;
+                font-size: 15px;
+                margin-top: -12px;
+            }
+
+            .chant_container {
+                cursor: pointer;
+                width: fit-content;
+            }
+		</style>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+			<a class="navbar-brand" href="../../index.html">
+				<img src="../../images/logo.png" alt="LOGO" style="height: 64px; width: auto;">
+			</a>
+		</nav>
+		<!-- End Of Navbar -->
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<!-- PDF INFORMATION -->
+		<section class="info" id="info">
+			<div class="container">
+				<div class="card shadow">
+					<div class="row">
+						<div class="col mt-3 ml-3">
+							<!-- Info -->
+							<h2 id="title" class="mb-4">Shonichi</h3>
+							<!-- Description -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4 class="mb-3">Intro</h4>
+                                    <div id="intro" class="chant_container">
+                                        <p class="chant">Urya oi! 4x</p>
+                                        <p class="chant">Aaaa.... MADA IKANAI</p>
+                                        <p class="chant">Itsu iku no?</p>
+                                        <p class="chant">Ima dessho!</p>
+                                        <p class="chant">Aaaa.... Yossha ikuzo!</p>
+                                        <p class="chant">Taiga!</p>
+                                        <p class="chant">Faiya!</p>
+                                        <p class="chant">Saiba!</p>
+                                        <p class="chant">Faiba!</p>
+                                        <p class="chant">Daiba!</p>
+                                        <p class="chant">Baiba!</p>
+                                        <p class="chant">Jya! Jya!</p>
+                                    </div>
+                                    
+                                    <h4 class="mb-3">[Verse 1]</h4>
+                                    <p class="lyrics">Aku berdiri di atas panggung yang selalu kudambakan</p>
+                                    <p class="lyrics">Di tengah eluan, tepuk tangan dan juga semangat</p>
+                                    <p class="lyrics">Dengan latihan yang ketat kulampaui dinding diriku</p>
+                                    <p class="lyrics">Sambut hari ini tirai kesempatan pun terbuka</p>
+
+                                    <h4 class="mb-3">[Pre-Chorus 1]</h4>
+                                    <p class="lyrics">Aku pun tidak menari sendiri</p>
+                                    <p class="lyrics">Ada hari ku menangis di jalan pulang</p>
+                                    <p class="lyrics">Aku bernyanyi tanpa berpikir</p>
+                                    <p class="lyrics">Ada hari ku hilang percaya diri</p>
+                                    <p class="chant" style="margin-left: 165px;">Hai se-no!</p>
+                                    <p class="lyrics">Selalu, sainganku</p>
+                                    <p class="chant">
+                                        Tora! <br>
+                                        Hii! <br>
+                                        Jinzou! <br>
+                                        Sen-i!
+                                    </p>
+                                    <p class="lyrics">Terlihat seolah bersinar</p>
+                                    <p class="chant">
+                                        Ama! <br>
+                                        Shindou! Kasentobijokyo!
+                                    </p>
+
+                                    <h4 class="mb-3">[Chorus 1]</h4>
+                                    <p class="lyrics">Impian ada di tengah peluh</p>
+                                    <p class="lyrics">Bagai bunga yang mekar secara perlahan</p>
+                                    <p class="lyrics">Usaha kerasa itu tak akan mengkhianati</p>
+                                    <p class="chant">
+                                        Oooi!<br>
+                                        Oi!<br>
+                                        Oi! Oi! Oi! Oi!
+                                    </p>
+                                    <p class="lyrics">Impian ada di tengah peluh</p>
+                                    <p class="lyrics">Selalu menunggu agar ia menguncup</p>
+                                    <p class="lyrics">Satu hari pasti sampai harapan terkabul</p>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <h4 class="mb-3">[Verse 2]</h4>
+                                    <p class="lyrics">Lampu sorot yang ternyata begitu terang seperti ini</p>
+                                    <p class="lyrics">Bagai malam panjang menjadi fajar mentari pagi</p>
+                                    <p class="lyrics">Sudah pasti aku tidak mau kalah dari kakak kelasku</p>
+                                    <p class="lyrics">Kami ingin buat show diri kami sendiri</p>
+
+                                    <h4 class="mb-3">[Pre-Chorus 2]</h4>
+                                    <p class="lyrics">Ada hari ku menangis sedih</p>
+                                    <p class="lyrics">Saat ku libur karena ku cedera</p>
+                                    <p class="lyrics">Ada hari ku sudah menyerah</p>
+                                    <p class="lyrics">Imbangi sekolah beserta latihan</p>
+                                    <p class="chant" style="margin-left: 165px;">Hai se-no!</p>
+                                    <p class="lyrics">Tapi ku mendengar</p>
+                                    <p class="chant">
+                                        Chape! <br>
+                                        Ape! <br>
+                                        Kara! <br>
+                                        Kina!
+                                    </p>
+                                    <p class="lyrics">Encore dari suatu tempat</p>
+                                    <p class="chant">
+                                        Rara! <br>
+                                        Tuske! Myouhontuske!
+                                    </p>
+
+                                    <h4 class="mb-3">[Chorus 2]</h4>
+                                    <p class="lyrics">Impian setelah air mata</p>
+                                    <p class="lyrics">Bunga senyuman setelah tangis berhenti</p>
+                                    <p class="lyrics">Kuncup yang berusaha keras pun akan mekar</p>
+                                    <p class="chant">
+                                        Oooi!<br>
+                                        Oi!<br>
+                                        Oi! Oi! Oi! Oi!
+                                    </p>
+                                    <p class="lyrics">Impian setelah air mata</p>
+                                    <p class="lyrics">Ku percaya takkan kalah dari angin hujan</p>
+                                    <p class="lyrics">Sampai doaku mencapai langit cerah</p>
+
+                                    <h4 class="mb-3">[Bridge]</h4>
+                                    <p class="lyrics">Penuh semangat mari menari</p>
+                                    <p class="lyrics">Penuh semangat mari menyanyi</p>
+                                    <p class="lyrics">Tak lupakan tujuan awal</p>
+                                    <p class="lyrics">Kerahkan seluruh tenaga</p>
+                                    <p class="lyrics">Oh!</p>
+
+                                    <h4 class="mb-3">[Chorus 1]</h4>
+                                    <p class="lyrics">Impian ada di tengah peluh</p>
+                                    <p class="lyrics">Bagai bunga yang mekar secara perlahan</p>
+                                    <p class="lyrics">Usaha kerasa itu tak akan mengkhianati</p>
+                                    <p class="lyrics">Impian ada di tengah peluh</p>
+                                    <p class="lyrics">Selalu menunggu agar ia menguncup</p>
+                                    <p class="lyrics">Satu hari pasti sampai harapan terkabul</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF PDF INFORMATION -->
+		<!-- Footer -->
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center text-white">
+						<p>Chant MiX PDF Rusak akan diupdate secara berkala</p>
+					</div>
+				</div>
+				<div class="row text-center text-xs-center text-sm-left text-md-left">
+					<!-- <div class="col-xs-12 col-sm-4 col-md-4"><h5>Tentang KPK</h5><ul class="list-unstyled quick-links"><li><a href="https://www.kpk.go.id/id/tentang-kpk/sekilas-komisi-pemberantasan-korupsi"><i class="fa fa-angle-double-right"></i>About</a></li><li><a href="https://www.kpk.go.id/id/tentang-kpk/pejabat-struktural"><i class="fa fa-angle-double-right"></i>Pejabat Struktural</a></li><li><a href="https://www.kpk.go.id/id/tentang-kpk/roadmap-dan-rencana-strategis"><i class="fa fa-angle-double-right"></i>Rencana Strategis</a></li></ul></div><div class="col-xs-12 col-sm-4 col-md-4"><h5>Layanan Publik</h5><ul class="list-unstyled quick-links"><li><a href="https://www.kpk.go.id/id/layanan-publik/pengaduan-masyarakat/mengenal-pengaduan-masyarakat"><i class="fa fa-angle-double-right"></i>Pengaduan Masyarakat</a></li><li><a href="https://www.kpk.go.id/id/layanan-publik/laporan-harta-kekayaan-penyelenggaraan-negara/mengenal-lhkpn"><i class="fa fa-angle-double-right"></i>LHKPN</a></li><li><a href="https://www.kpk.go.id/id/layanan-publik/gratifikasi/mengenal-gratifikasi"><i class="fa fa-angle-double-right"></i>Gratifikasi</a></li><li><a href="https://www.kpk.go.id/id/layanan-publik/informasi-publik"><i class="fa fa-angle-double-right"></i>Informasi Publik</a></li></ul></div><div class="col-xs-12 col-sm-4 col-md-4"><h5>Kontak KPK</h5><ul class="list-unstyled quick-links"><li><a href="https://www.google.com/maps/dir/-6.1677568,106.6115072/GEDUNG+KPK+Jl.+Kuningan+Persada+Kav.+4+Jakarta+Selatan+12950/@-6.1687329,106.5817096,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2e69f40eaa579f6f:0x3177a5ac88a987e8!2m2!1d106.8307239!2d-6.2077814"><i class="fas fa-map-marker-alt"></i></i>GEDUNG KPK Jl. Kuningan Persada Kav. 4 Jakarta Selatan 12950</a></li><li><a href="#"><i class="fas fa-phone"></i>(021) 2557 8300</a></li><li><a href="#"><i class="fas fa-fax"></i>(021) 2557 8333</a></li><li><a href="#"><i class="fas fa-envelope"></i>informasi@kpk.go.id</a></li><li><a href="#"><i class="fas fa-headset"></i></i>Call Center: 198</a></li></ul></div>-->
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+						<ul class="list-unstyled list-inline social text-center">
+							<li class="list-inline-item">
+								<a href="https://instagram.com/jkt48terbaik">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://twitter.com/JKT48Terbaik">
+									<i class="fab fa-twitter-square"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.facebook.com/KomisiPemberantasanKorupsi">
+									<i class="fab fa-facebook-square"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://discord.gg/vjsxU3FBQt">
+									<i class="fab fa-discord"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					</hr>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+						<p class="h6">&copy; 2025 MiX</p>
+					</div>
+					</hr>
+				</div>
+			</div>
+		</footer>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	</body>
+</html>
