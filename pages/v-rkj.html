@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="https://chantmix.github.io/pdfrusak/images/logo.png">
+		<title>View PDF</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- AJAX -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+		<!-- costume css -->
+		<link rel="stylesheet" type="text/css" href="../css/flipbook.style.css">
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="../css/footer.css">
+		<link rel="stylesheet" type="text/css" href="../css/pages.css">
+		<!-- Bootstrap Css -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<!-- Standard SEO Meta Tags -->
+		<meta name="description" content="JKT48 Chant Mix Rusak PDF">
+		<meta name="keywords" content="jkt48, chant, mix, rusak, pdf, musang">
+		<meta name="author" content="Dandy">
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://chantmix.github.io/pdfrusak/">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="JKT48 Chant Mix Rusak PDF">
+		<meta property="og:description" content="JKT48 Chant Mix Rusak PDF">
+		<meta property="og:image" content="https://chantmix.github.io/pdfrusak/images/meta_image.png">
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="JKT48 Chant Mix Rusak PDF">
+		<meta name="twitter:description" content="JKT48 Chant Mix Rusak PDF">
+		<meta name="twitter:image" content="https://chantmix.github.io/pdfrusak/images/meta_image.png">
+		<meta name="twitter:site" content="@da_n_dy">
+		<meta name="twitter:creator" content="@da_n_dy">
+		<link rel="icon" type="image/x-icon" href="https://chantmix.github.io/pdfrusak/images/logo.png">
+		<!-- Include JS -->
+		<script src="../js/flipbook.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#read").flipBook({
+					//Layout Setting
+					pdfUrl: '../pdf/RKJ RUSAK.pdf',
+					lightBox: true,
+					layout: 3,
+					currentPage: {
+						vAlign: "bottom",
+						hAlign: "left"
+					},
+					// BTN SETTING
+					btnShare: {
+						enabled: false
+					},
+					btnPrint: {
+						hideOnMobile: true
+					},
+					btnDownloadPages: {
+						enabled: false,
+						title: "Download pages",
+						icon: "fa-download",
+						icon2: "file_download",
+						url: "images/pdf.rar",
+						name: "allPages.zip",
+						hideOnMobile: false
+					},
+					btnColor: 'rgb(255,120,60)',
+					sideBtnColor: 'rgb(255,120,60)',
+					sideBtnSize: 60,
+					sideBtnBackground: "rgba(0,0,0,.7)",
+					sideBtnRadius: 60,
+					btnSound: {
+						vAlign: "top",
+						hAlign: "left"
+					},
+					btnAutoplay: {
+						vAlign: "top",
+						hAlign: "left"
+					},
+					// SHARING
+					btnShare: {
+						enabled: false,
+						title: "Share",
+						icon: "fa-share-alt"
+					}
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+			<a class="navbar-brand" href="../index.html">
+				<img src="../images/logo.png" alt="LOGO" style="height: 64px; width: auto;">
+			</a>
+		</nav>
+		<!-- End Of Navbar -->
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<!-- PDF INFORMATION -->
+		<section class="info" id="info">
+			<div class="container">
+				<div class="card shadow">
+					<div class="row">
+						<div class="col-md-5">
+							<img src="../images/book2/rkj.jpg" class="w-100 book-1">
+						</div>
+						<div class="col-md-7 mt-3">
+							<!-- Info -->
+							<h3 id="title">RKJ Chant Mix Rusak JKT48</h3>
+							<p id="author" class="d-inline">Haibarasex</p>
+							<p id="date" class="d-inline">25 Juli 2024</p>
+							<!-- <p id="size"><i class="fas fa-file "></i> File Size <b>1MB</b></p> -->
+							<!-- Button -->
+							<div class="button">
+								<a id="read" class="btn btn-primary mt-2 text-white">Baca PDF <i class="fas fa-book-reader fa-lg"></i>
+								</a>
+								<a href="../pdf/RKJ RUSAK.pdf" class="btn btn-primary mt-2 text-white" download>Unduh PDF <i class="fas fa-download fa-lg"></i>
+								</a>
+							</div>
+							<!-- Description -->
+							<p id="description">Chant with your own risk! Kami tidak bertanggung jawab apabila kamu ditubirin wota sepuh, polisi chant, dan segala macam entitasnya.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF PDF INFORMATION -->
+		<!-- Footer -->
+		<footer id="footer" class="footer">
+			<script>
+				fetch('../footer.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('footer').innerHTML = data;
+				});
+			</script>
+		</footer>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	</body>
+</html>

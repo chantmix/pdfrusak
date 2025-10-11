@@ -1,0 +1,67 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1;
+}
+
+#footer {
+    margin-top: auto;
+    background-color: #333;
+    padding: 20px 0;
+    color: white;
+}
+
+.bookshelf .thumb {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 0.5%;
+    width: 15%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+    max-width: 120px;
+}
+
+.bookshelf .thumb img {
+    width: 100%;
+    display: block;
+    vertical-align: top;
+}
+
+.bookshelf .shelf-img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+    margin-top: -12px;
+}
+
+.bookshelf .covers {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.bookshelf {
+    text-align: center;
+    padding: 0;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: #c0392b;
+}
+
+.pagination>li>a:hover,
+.pagination>li>span:hover {
+    color: #c0392b !important;
+}
+
+.pagination>li.active>a {
+    background-color: #c0392b !important;
+    border: 0;
+    color: #fff;
+}

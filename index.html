@@ -28,81 +28,13 @@
 		<link rel="stylesheet" href="css/flipbook.style.css">
 		<link rel="stylesheet" href="css/footer.css">
 		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/home.css">
 		<!-- jQuery & jQuery UI -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
 		<!-- Flipbook Plugin -->
 		<script src="js/flipbook.min.js"></script>
 		<!-- Custom CSS -->
-		<style>
-			html,
-			body {
-				height: 100%;
-				margin: 0;
-				display: flex;
-				flex-direction: column;
-			}
-
-			body {
-				flex: 1;
-			}
-
-			#footer {
-				margin-top: auto;
-				background-color: #333;
-				padding: 20px 0;
-				color: white;
-			}
-
-			.bookshelf .thumb {
-				display: inline-block;
-				cursor: pointer;
-				margin: 0 0.5%;
-				width: 15%;
-				box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
-				max-width: 120px;
-			}
-
-			.bookshelf .thumb img {
-				width: 100%;
-				display: block;
-				vertical-align: top;
-			}
-
-			.bookshelf .shelf-img {
-				height: auto;
-				max-width: 100%;
-				vertical-align: top;
-				margin-top: -12px;
-			}
-
-			.bookshelf .covers {
-				width: 100%;
-				position: relative;
-				text-align: center;
-			}
-
-			.bookshelf {
-				text-align: center;
-				padding: 0;
-			}
-
-			.pagination>li>a,
-			.pagination>li>span {
-				color: #c0392b;
-			}
-
-			.pagination>li>a:hover,
-			.pagination>li>span:hover {
-				color: #c0392b !important;
-			}
-
-			.pagination>li.active>a {
-				background-color: #c0392b !important;
-				border: 0;
-				color: #fff;
-			}
-		</style>
 	</head>
 	<body>
 		<!-- Navbar -->
@@ -126,22 +58,22 @@
 		<div class="bookshelf">
 			<div class="covers">
 				<div class="thumb">
-					<a href="v-twt.html">
+					<a href="pages/v-twt.html">
 						<img src="images/book2/twt.jpg" alt="TWT">
 					</a>
 				</div>
 				<div class="thumb">
-					<a href="v-pajama.html">
+					<a href="pages/v-pajama.html">
 						<img src="images/book2/pahama.jpg" alt="Pajama Drive">
 					</a>
 				</div>
 				<div class="thumb">
-					<a href="v-ramune.html">
+					<a href="pages/v-ramune.html">
 						<img src="images/book2/ramune.jpg" alt="Ramune no Nomikata">
 					</a>
 				</div>
 				<div class="thumb">
-					<a href="v-rkj.html">
+					<a href="pages/v-rkj.html">
 						<img src="images/book2/rkj.jpg" alt="RKJ">
 					</a>
 				</div>
@@ -158,49 +90,13 @@
     <!-- End Of PDF -->
 		<!-- Footer -->
 		<footer id="footer" class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 text-center text-white">
-						<p>Chant MiX PDF Rusak akan diupdate secara berkala</p>
-					</div>
-				</div>
-				<div class="row text-center text-xs-center text-sm-left text-md-left">
-					<!-- <div class="col-xs-12 col-sm-4 col-md-4"><h5>Tentang KPK</h5><ul class="list-unstyled quick-links"><li><a href="https://www.kpk.go.id/id/tentang-kpk/sekilas-komisi-pemberantasan-korupsi"><i class="fa fa-angle-double-right"></i>About</a></li><li><a href="https://www.kpk.go.id/id/tentang-kpk/pejabat-struktural"><i class="fa fa-angle-double-right"></i>Pejabat Struktural</a></li><li><a href="https://www.kpk.go.id/id/tentang-kpk/roadmap-dan-rencana-strategis"><i class="fa fa-angle-double-right"></i>Rencana Strategis</a></li></ul></div><div class="col-xs-12 col-sm-4 col-md-4"><h5>Layanan Publik</h5><ul class="list-unstyled quick-links"><li><a href="https://www.kpk.go.id/id/layanan-publik/pengaduan-masyarakat/mengenal-pengaduan-masyarakat"><i class="fa fa-angle-double-right"></i>Pengaduan Masyarakat</a></li><li><a href="https://www.kpk.go.id/id/layanan-publik/laporan-harta-kekayaan-penyelenggaraan-negara/mengenal-lhkpn"><i class="fa fa-angle-double-right"></i>LHKPN</a></li><li><a href="https://www.kpk.go.id/id/layanan-publik/gratifikasi/mengenal-gratifikasi"><i class="fa fa-angle-double-right"></i>Gratifikasi</a></li><li><a href="https://www.kpk.go.id/id/layanan-publik/informasi-publik"><i class="fa fa-angle-double-right"></i>Informasi Publik</a></li></ul></div><div class="col-xs-12 col-sm-4 col-md-4"><h5>Kontak KPK</h5><ul class="list-unstyled quick-links"><li><a href="https://www.google.com/maps/dir/-6.1677568,106.6115072/GEDUNG+KPK+Jl.+Kuningan+Persada+Kav.+4+Jakarta+Selatan+12950/@-6.1687329,106.5817096,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2e69f40eaa579f6f:0x3177a5ac88a987e8!2m2!1d106.8307239!2d-6.2077814"><i class="fas fa-map-marker-alt"></i></i>GEDUNG KPK Jl. Kuningan Persada Kav. 4 Jakarta Selatan 12950</a></li><li><a href="#"><i class="fas fa-phone"></i>(021) 2557 8300</a></li><li><a href="#"><i class="fas fa-fax"></i>(021) 2557 8333</a></li><li><a href="#"><i class="fas fa-envelope"></i>informasi@kpk.go.id</a></li><li><a href="#"><i class="fas fa-headset"></i></i>Call Center: 198</a></li></ul></div>-->
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-						<ul class="list-unstyled list-inline social text-center">
-							<li class="list-inline-item">
-								<a href="https://instagram.com/jkt48terbaik">
-									<i class="fab fa-instagram"></i>
-								</a>
-							</li>
-							<li class="list-inline-item">
-								<a href="https://twitter.com/JKT48Terbaik">
-									<i class="fab fa-twitter-square"></i>
-								</a>
-							</li>
-							<li class="list-inline-item">
-								<a href="https://www.facebook.com/KomisiPemberantasanKorupsi">
-									<i class="fab fa-facebook-square"></i>
-								</a>
-							</li>
-							<li class="list-inline-item">
-								<a href="https://discord.gg/vjsxU3FBQt">
-									<i class="fab fa-discord"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-					</hr>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-						<p class="h6">&copy; 2025 MiX</p>
-					</div>
-					</hr>
-				</div>
-			</div>
+			<script>
+				fetch('footer.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('footer').innerHTML = data;
+				});
+			</script>
 		</footer>
 		<!-- Bootstrap JS (Popper + Bootstrap) -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
